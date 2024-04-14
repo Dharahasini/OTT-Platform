@@ -1,0 +1,131 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #141414;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e5e5e5;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    background-color: rgb(10, 10, 10); /* Red background for the homepage */
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Content Details Page */
+#content-details {
+    display: none;
+    padding: 20px;
+}
+
+#content-details img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#content-details h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#content-details p {
+    margin: 10px 0;
+}
+
+/* Search Functionality */
+#search-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #f00b0b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    .carousel img {
+        width: 120px;
+        height: 160px;
+    }
+}

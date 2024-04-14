@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header with Netflix logo -->
+    <header>
+        <nav>
+            <div class="logo">Netflix Clone</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">My List</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home-page">
+        <!-- Search Section -->
+        <div id="search-section">
+            <input type="text" id="search-input" placeholder="Search for movies or series...">
+            <button id="search-button" onclick="searchMovies()">Search</button>
+        </div>
+
+        <!-- Trending Now Section -->
+        <section class="category">
+            <h2>Trending Now</h2>
+            <div class="carousel" id="trending-carousel">
+                <!-- Trending movies will be added dynamically -->
+            </div>
+        </section>
+
+        <!-- New Releases Section -->
+        <section class="category">
+            <h2>New Releases</h2>
+            <div class="carousel" id="new-releases-carousel">
+                <!-- New releases will be added dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Content Details Page -->
+    <div id="content-details">
+        <img id="content-image" src="" alt="Content Image">
+        <h2 id="content-title">Content Title</h2>
+        <p id="content-description">Content Description</p>
+        <button onclick="goBackToHomePage()">Go Back</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Netflix Clone. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
